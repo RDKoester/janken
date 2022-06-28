@@ -1,13 +1,10 @@
 // jshint esversion:6
 
-const playerPick = require(__dirname + '/app.js')
-
-
-
-exports.result = function() {
+exports.result = function(playerPick) {
     const randomPick = Math.ceil(Math.random() * 3)
     let computerPick = ""
- 
+
+
     if (randomPick === 1){
      computerPick = "Rock"
     } else if (randomPick === 2) {
@@ -17,7 +14,7 @@ exports.result = function() {
     }
  
     if (playerPick === "") {
-        return
+        return "Error"
     } else if (computerPick === playerPick) {
         return "Tie"
     } else if (computerPick === "Rock" && playerPick === "Paper") {

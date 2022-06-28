@@ -7,23 +7,18 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
-
-let playerPick = ""
-
-module.exports = {
-    'playerPick': playerPick
-}
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/game.html')
 })
 
 app.post('/', (req, res) => {
 
-    playerPick = req.body.pick
-    console.log(playerPick)
+    const playerPick = req.body.pick
 
-    const winner = gameApp.result()
+    console.log(req.body.pick)
+    res.redirect("/")
+
+    const winner = gameApp.result(playerPick)
     console.log(winner)
 })
 
