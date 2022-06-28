@@ -1,0 +1,31 @@
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+}
+
+h1 {
+    text-align: center;
+}
+
+#rock {
+    max-width: 400px;
+    height: auto;
+}
+
+#paper {
+    max-width: 400px;
+    height: auto;
+}
+
+#scissors {
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+/* #rock:hover, #scissors:hover, #paper:hover {
+    outline: 1px solid red;
+} */
