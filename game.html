@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Janken</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <h1>Choose your pick!</h1>
-        <div class="gameBox">
-            <form action="/" method="post">
-                <button class="rock" type="submit" name="pick"  value="Rock"><img src="images/(rock).png" id="rock" ></button>
-                <button class="paper" type="submit" name="pick" value="Paper"><img src="images/(paper).png" id="paper"></button>
-                <button class="scissors" type="submit" name="pick" value="Scissors"><img src="images/(scissors).png" id="scissors"></button>
-            </form>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janken</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Choose your pick!</h1>
+    <form action="/" method="post">
+      <div class="flex-container">
+        <button class="flex-item flex-item-1" name="button" value="Rock">
+          <img src="images/rock.png" />
+        </button>
+        <button class="flex-item flex-item-2" name="button" value="Paper">
+          <img src="images/paper.png" />
+        </button>
+        <button class="flex-item flex-item-3" name="button" value="Scissors">
+          <img src="images/scissors.png" />
+        </button>
+      </div>
+    </form>
+    <div class="opponentBox"></div>
+  </body>
 </html>
