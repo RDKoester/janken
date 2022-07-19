@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+    <div class="main">
+        <h1 class="jpn">じゃん拳</h1>
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <h1 class="choose-pick">Choose your pick!</h1>
+    <form action="/" method="post">
+        <div class="flex-container">
+        <button class="flex-item flex-item-1" name="button" value="Rock">
+            <img src="images/rock.png" />
+        </button>
+        <button class="flex-item flex-item-2" name="button" value="Paper">
+            <img src="images/paper.png" />
+        </button>
+        <button class="flex-item flex-item-3" name="button" value="Scissors">
+            <img src="images/scissors.png" />
+        </button>
+        </div>
+    </form>
+
+<%- include("partials/footer"); -%>
