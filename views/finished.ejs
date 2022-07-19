@@ -1,15 +1,24 @@
 <%- include("partials/header"); -%>
 
+<!-- Explaining the player how to restart the game -->
+
 <h1 id="result" class="result"><%= gameResult.result %></h1>
 <p class="again">(click on any hand to try again!)</p>
 
+<!-- Showing the game result -->
+
 <h1 id="playerPick" class="ppH1"><%= gameResult.pp %></h1>
+
+<!-- Showing the players pick  -->
+
 <h1 class="choice">Your choice:</h1>
 <button class="flex-item ppImg">
   <img src="" id="ppImg" />
 </button>
 
-<h1 class="result">VS</h1>
+<h1 class="result">VS</h1> 
+
+<!-- Showing what the computer generated -->
 
 <h1 id="computerPick" class="cpH1"><%= gameResult.cp %></h1>
 <h1 class="choice">Your opponents choice:</h1>

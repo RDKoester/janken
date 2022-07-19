@@ -1,6 +1,8 @@
 // jshint esversion:6
 
 exports.result = function (playerPick) {
+
+  // Generating a random pick for the computer
   const randomPick = Math.ceil(Math.random() * 3);
   let computerPick = "";
 
@@ -12,6 +14,7 @@ exports.result = function (playerPick) {
     computerPick = "Scissors";
   }
 
+  // Game logic based on the players pick
   if (playerPick === "") {
     return "Error";
   } else if (computerPick === playerPick) {

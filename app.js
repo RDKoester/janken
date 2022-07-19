@@ -5,7 +5,6 @@ const path = require("path");
 const ejs = require("ejs");
 const app = express();
 const logger = require("morgan");
-const createError = require("http-errors");
 
 //configuration
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,5 +23,5 @@ app.post("/", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server started on port 3000");
+  console.log("Server started successfully!");
 });

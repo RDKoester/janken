@@ -1,59 +1,50 @@
-.main {
-  text-align: center;
-  font-size: 2.5em;
-  line-height: 0.5;
-  margin: 3% auto;
+body {
+  background-color: #f7f7f7;
+}
+
+.main,
+.result,
+.choose-pick,
+.again,
+.choice {
   font-family: "Edu SA Beginner", cursive;
+  text-align: center;
+}
+
+/* game.html */
+.main {
+  font-size: 2.5em;
+  line-height: 0.9;
+  margin: 3% auto;
 }
 
 .jpn {
   font-family: "Noto Serif JP", serif;
 }
 
-.result {
-  font-family: "Edu SA Beginner", cursive;
-  font-size: 4em;
-  text-align: center;
-  margin: 2.5% auto 0 auto;
-}
-
 .choose-pick {
-  font-family: "Edu SA Beginner", cursive;
   font-size: 3em;
-  text-align: center;
   margin: 2.5% auto 0 auto;
-}
-
-.again {
-  font-family: "Edu SA Beginner", cursive;
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0 auto 2% auto;
-}
-
-.choice {
-  font-family: "Edu SA Beginner", cursive;
-  font-size: 2.5em;
-  text-align: center;
 }
 
 .flex-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .flex-item {
-  width: 300px;
+  background-color: #dfdfdf;
+  border: 3px solid #333;
+
   height: 300px;
   margin: 25px;
   padding: 0;
-  border: 3px solid #333;
-  background-color: #dfdfdf;
+  width: 300px;
 }
 
 .flex-item img {
@@ -69,6 +60,21 @@
   transform: translateY(4px);
 }
 
+/* finished.ejs */
+.result {
+  font-size: 4em;
+  margin: 2.5% auto 0 auto;
+}
+
+.again {
+  font-size: 1.5em;
+  margin: 0 auto 2% auto;
+}
+
+.choice {
+  font-size: 2.5em;
+}
+
 .ppH1,
 .cpH1 {
   display: none;
@@ -81,11 +87,12 @@
   margin-right: auto;
 }
 
+/* footer */
 .footer {
+  color: #8f8f8f;
   margin-top: 5%;
   margin-bottom: 3%;
   text-align: center;
-  color: #8f8f8f;
 }
 
 .fa-github {
