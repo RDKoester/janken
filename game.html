@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Janken</title>
+    <script
+      src="https://kit.fontawesome.com/78f1224d8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="js/front.js" defer></script>
   </head>
   <body>
-    <h1>Choose your pick!</h1>
+    <div class="main">
+      <h1 class="jpn">じゃん拳</h1>
+      <h1>Rock Paper Scissors</h1>
+    </div>
+    <h1 class="choose-pick">Choose your pick!</h1>
     <form action="/" method="post">
       <div class="flex-container">
         <button class="flex-item flex-item-1" name="button" value="Rock">
@@ -22,6 +37,11 @@
         </button>
       </div>
     </form>
-    <div class="opponentBox"></div>
+    <footer class="footer">
+      <a href="https://github.com/RDKoester/janken"
+        ><i class="fa-brands fa-3x fa-github"></i
+      ></a>
+      <p>© Copyright Robin Köster</p>
+    </footer>
   </body>
 </html>

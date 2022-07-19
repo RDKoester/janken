@@ -1,6 +1,40 @@
-h1 {
+.main {
   text-align: center;
-  margin: 3% auto 5% auto;
+  font-size: 2.5em;
+  line-height: 0.5;
+  margin: 3% auto;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.jpn {
+  font-family: "Noto Serif JP", serif;
+}
+
+.result {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 4em;
+  text-align: center;
+  margin: 2.5% auto 0 auto;
+}
+
+.choose-pick {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 2.5% auto 0 auto;
+}
+
+.again {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto 2% auto;
+}
+
+.choice {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .flex-container {
@@ -17,6 +51,7 @@ h1 {
   width: 300px;
   height: 300px;
   margin: 25px;
+  padding: 0;
   border: 3px solid #333;
   background-color: #dfdfdf;
 }
@@ -32,4 +67,27 @@ h1 {
 .flex-item:active {
   background-color: lightgrey;
   transform: translateY(4px);
+}
+
+.ppH1,
+.cpH1 {
+  display: none;
+}
+
+.ppImg,
+.cpImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: #8f8f8f;
+}
+
+.fa-github {
+  color: black;
 }

@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const gameApp = require(__dirname + "/game.js");
 const path = require("path");
-let ejs = require("ejs");
+const ejs = require("ejs");
 const app = express();
 const logger = require("morgan");
 const createError = require("http-errors");
@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  const userInput = req.body.button;
+  const gameState = gameApp.result(req.body.button);
 
-  res.render("finished", { gameResult: gameApp.result(userInput) });
+  res.render("finished", { gameResult: gameState });
 });
 
 app.listen("3000", () => {
