@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-/* game.html */
+/* game.ejs */
 .main {
   font-size: 2.5em;
   line-height: 0.9;
@@ -97,4 +97,24 @@ body {
 
 .fa-github {
   color: black;
+}
+
+div {
+  outline: 1px solid red;
+}
+
+@media (min-width: 800px) {
+  .laptop-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vs {
+    margin: auto 2%;
+  }
 }

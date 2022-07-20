@@ -10,20 +10,27 @@
 <h1 id="playerPick" class="ppH1"><%= gameResult.pp %></h1>
 
 <!-- Showing the players pick  -->
+<div class="laptop-screen">
+  <div>
+    <h1 class="choice">Your choice:</h1>
+    <button class="flex-item ppImg">
+      <img src="" id="ppImg" />
+    </button>
+  </div>
 
-<h1 class="choice">Your choice:</h1>
-<button class="flex-item ppImg">
-  <img src="" id="ppImg" />
-</button>
-
-<h1 class="result">VS</h1> 
+  <div class="vs">
+    <h1 class="result">VS</h1> 
+  </div>
 
 <!-- Showing what the computer generated -->
 
-<h1 id="computerPick" class="cpH1"><%= gameResult.cp %></h1>
-<h1 class="choice">Your opponents choice:</h1>
-<button class="flex-item ppImg">
-  <img src="" id="cpImg" />
-</button>
+  <div>
+    <h1 id="computerPick" class="cpH1"><%= gameResult.cp %></h1>
+    <h1 class="choice">Your opponents choice:</h1>
+    <button class="flex-item ppImg">
+      <img src="" id="cpImg" />
+    </button>
+  </div>
+</div>
 
 <%- include("partials/footer"); -%>
