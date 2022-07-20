@@ -99,10 +99,11 @@ body {
   color: black;
 }
 
-div {
+/* div {
   outline: 1px solid red;
-}
+} */
 
+/* for responsiveness */
 @media (min-width: 800px) {
   .laptop-screen {
     display: flex;
